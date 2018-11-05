@@ -1,0 +1,103 @@
+body {
+  font: 12px/18px "Lucida Grande", "Lucida Sans Unicode", Arial, Helvetica, Verdana, sans-serif;
+}
+
+a,
+a:hover {
+  color: #0088cc;
+}
+a:focus {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  display: flex;
+  padding: 10px 0;
+  justify-content: space-between;
+   box-shadow: none;
+  -webkit-box-shadow: none;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.container:before {
+  content: " ";
+  display: table;
+}
+.container:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+.nav{
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.nav li {
+  margin: 0;
+  padding: 0 10px;
+}
+
+.nav li ul {
+  list-style: none;
+  display: none;
+  padding: 0;
+  position: absolute;
+}
+
+.nav li:hover > ul {
+  display: block;
+}
+
+.nav a:hover,
+.nav .active a {
+  color: #0088cc;
+}
+
+.nav li a:hover {
+  box-shadow: 0px 3px 0px 0px #179cde;
+  -webkit-box-shadow: 0px 3px 0px 0px #179cde;
+  padding-bottom: 13.5px;
+}
+
+.nav a {
+	color: #0088cc;
+  -webkit-transition: padding-bottom .2s ease-in-out, box-shadow .2s ease-in-out;
+  -moz-transition: padding-bottom .2s ease-in-out, box-shadow .2s ease-in-out;
+  -ms-transition: padding-bottom .2s ease-in-out, box-shadow .2s ease-in-out;
+}
+
+.nav {
+  color: #a2a2a2;
+  font-size: 15px;
+}
+
+.nav a,
+.nav a:hover,
+.nav a:focus {
+  background-color: transparent;
+}
+
+.nav .open > a,
+.nav .open > a:hover,
+.nav .open > a:focus {
+  box-shadow: none;
+  background-color: #1e98d4;
+  color: #FFF;
+  border: 0;
+}
+
+.icon {
+  display: inline-block;
+}
+.icon-twitter {
+  width: 21px;
+  height: 17px;
+  vertical-align: text-top;
+  opacity: 0.9;
+}
