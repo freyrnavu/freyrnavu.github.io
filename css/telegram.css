@@ -170,3 +170,27 @@ a.news-entry:hover .news-title {
 .news-date {
 	color: #000;
 }
+
+@media (max-width: 480px) {
+  .nav .container {
+    padding: 0;
+  }
+  .logo-text {
+    padding-top: 10px;
+    padding-bottom: 2px;
+  }
+  .logo-img {
+    width: 85px;
+    height: 85px;
+  }
+  .logo-title,
+  .logo-title:hover {
+    font-size: 23px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    letter-spacing: -1px;
+  }
+  .logo-lead {
+    font-size: 16px;
+    max-width: 224px;
+  }
